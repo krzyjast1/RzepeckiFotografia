@@ -6,7 +6,7 @@ import javax.validation.constraints.Pattern;
 public class Token {
 	
 	@NotNull(message="is required")
-	@Pattern(regexp="((?:[a-z][a-z]*[0-9]+[a-z0-9]*))", 
+	@Pattern(regexp="\\b[a-zA-Z]{6}[0-9]{3}\\b", 
 		message="Token dostępu musi składać się z 6 liter na początku i 3 cyfr na końcu")
 	private String token;
 
