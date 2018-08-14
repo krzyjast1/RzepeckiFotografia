@@ -41,7 +41,7 @@ public class HomeController {
 		System.out.println(bindingResult);
 		
 		if(bindingResult.hasErrors()) {
-			return "get-photo-form";
+			return "index";
 		} else {
 			return "gallery";
 		}

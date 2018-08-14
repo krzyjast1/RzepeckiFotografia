@@ -1,5 +1,6 @@
-<%taglib prefix="form" uri="http://www.springframework.org/tags/form"%>
-<% page language="java" contentType="text/html; charset=UTF-8" pageEncoding="UTF-8"%>
+<%@ taglib prefix="form" uri="http://www.springframework.org/tags/form" %>
+<%@ page language="java" contentType="text/html; charset=UTF-8" pageEncoding="UTF-8" %>
+<%@taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core" %>
 <!doctype html>
 <html lang="pl">
   <head>
@@ -11,14 +12,14 @@
       <!-- Bootstrap CSS -->
       <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
       <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.2.0/css/all.css" integrity="sha384-hWVjflwFxL6sNzntih27bfxkr27PmbbK/iSvJ+a4+0owXq79v+lsFkW54bOGbiDQ" crossorigin="anonymous">
-      <link href="https://fonts.googleapis.com/css?family=Lato:400,700,900&amp;subset=latin-ext" rel="stylesheet">
-      <link rel="stylesheet" href="css/main.css">
-      <link rel="stylesheet" href="css/gallery.css">
-      <link rel="stylesheet" href="css/animate.css">
-      <link rel="stylesheet" href="css/owl.carousel.min.css">
-    	<link rel="stylesheet" href="css/owl.theme.default.min.css">
+      <link href="https://fonts.googleapis.com/css?family=Lato:400,700,900|Merienda:400,700&amp;subset=latin-ext" rel="stylesheet">
+      <link rel="stylesheet" href="<c:url value="/static/css/main.css"/>">
+      <link rel="stylesheet" href="<c:url value="/static/css/gallery.css"/>">
+      <link rel="stylesheet" href="<c:url value="/static/css/animate.css"/>">
+      <link rel="stylesheet" href="<c:url value="/static/css/owl.carousel.min.css"/>">
+    	<link rel="stylesheet" href="<c:url value="/static/css/owl.theme.default.min.css"/>">
       <title>MS Rzepeccy</title>
-<script src="js/modernizr-2.6.2.min.js"></script>
+<script src="<c:url value="/static/js/modernizr-2.6.2.min.js"/>"></script>
 </head>
 <body>
   <header class="welcome">
@@ -26,7 +27,7 @@
       <h1 class="welcome-title">Marty i Szymona Rzepeckich</h1>
     </div>
     <nav class="navbar fixed-top navbar-expand-lg navbar-light">
-      <a class="navbar-brand" href="#"><img src="images/brand.jpg" class="img-fluid rounded"></a>
+      <a class="navbar-brand" href="#"><img src="<c:url value="/static/images/brand.jpg"/>" class="img-fluid rounded"></a>
       <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
       </button>
@@ -107,21 +108,21 @@
     </header>
       <div class="row">
         <a class="gallery-item col-xs-12 col-sm-12 col-md-4  border border-white" href="single.html">
-          <img src="images/background.jpg" alt="Ślub">
+          <img src="<c:url value="/static/images/background.jpg"/>" alt="Ślub">
           <span class="overlay">
             <h2>Ślub</h2>
             <span>14 Photos</span>
           </span>
         </a>
         <a class="gallery-item col-xs-12 col-sm-12 col-md-4 border border-white" href="single.html">
-          <img src="images/work_2.jpg" alt="Chrzest">
+          <img src="<c:url value="/static/images/work_2.jpg"/>" alt="Chrzest">
           <span class="overlay">
             <h2>Chrzest</h2>
             <span>7 Photos</span>
           </span>
         </a>
         <a class="gallery-item col-xs-12 col-sm-12 col-md-4 border border-white" href="single.html">
-          <img src="images/work_3.jpg" alt="Plener">
+          <img src="<c:url value="/static/images/work_3.jpg"/>" alt="Plener">
           <span class="overlay">
             <h2>Plener</h2>
             <span>22 Photos</span>
@@ -138,21 +139,21 @@
     <div id="carouselExampleFade" class="carousel slide carousel-fade" data-ride="carousel">
   <div class="carousel-inner">
     <div class="carousel-item active wedding"id="slub">
-      <img class="img-fluid" src="images/a.jpg" alt="">
+      <img class="img-fluid" src="<c:url value="/static/images/a.jpg"/>" alt="">
       <div class="carousel-caption">
         <h3 class="caption">Fotografia Ślubna</h3>
         <p class="service-description">Oferujemy sesje ślubne, wraz z przygotowaniami Pani i Pana Młodych.</p>
       </div>
     </div>
     <div class="carousel-item baptism" id="chrzest">
-      <img class="img-fluid" src="images/c.jpg" alt="">
+      <img class="img-fluid" src="<c:url value="/static/images/c.jpg"/>" alt="">
       <div class="carousel-caption">
         <h3 class="caption">Chrzest</h3>
         <p class="service-description">Zdjęcia chrzcielne to ważna pamiątka na wiele lat, wykonujemy je ze szczególną dbałością o detale.</p>
       </div>
     </div>
     <div class="carousel-item setting" id="plener">
-      <img class="img-fluid" src="images/b.jpg" alt="">
+      <img class="img-fluid" src="<c:url value="/static/images/b.jpg"/>" alt="">
       <div class="carousel-caption">
         <h3 class="caption">Plener</h3>
         <p class="service-description">Do każdej okazji pasują zdjęcia plenerowe, które zrobimy we wspólnie wybranym miejscu.</p>
@@ -160,7 +161,7 @@
     </div>
     <!--
     <div class="carousel-item baptism" id="fotobudka">
-      <img class="img-fluid" src="images/e.jpg" alt="">
+      <img class="img-fluid" src="<c:url value="/static/images/e.jpg"/>" alt="">
       <div class="carousel-caption">
         <h3 class="caption">Fotobudka</h3>
         <p class="service-description">Proponujemy skorzystanie z naszej specjalnej atrakcji.</p>
@@ -169,7 +170,7 @@
     </div
   -->
     <div class="carousel-item pick-up-pictures"id="odbierz">
-      <img class="img-fluid" src="images/d.jpg" alt="">
+      <img class="img-fluid" src="<c:url value="/static/images/d.jpg"/>" alt="">
       <div class="carousel-caption">
         <h3 class="caption">Odbierz zdjęcia</h3>
         <p class="service-description">Specjalnie dla Was stworzyliśmy system internetowego odbioru zdjęć, polecamy szczególnie stałym klientom.</p>
@@ -214,12 +215,12 @@
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
 
     <!-- Carousel -->
-  	<script src="js/owl.carousel.min.js"></script>
+  	<script src="<c:url value="/static/js/owl.carousel.min.js"/>"></script>
   	<!-- Stellar -->
-  	<script src="js/jquery.stellar.min.js"></script>
+  	<script src="<c:url value="/static/js/jquery.stellar.min.js"/>"></script>
   	<!-- Waypoints -->
-  	<script src="js/jquery.waypoints.min.js"></script>
+  	<script src="<c:url value="/static/js/jquery.waypoints.min.js"/>"></script>
   	<!-- MAIN JS -->
-  	<script src="js/main.js"></script>
+  	<script src="<c:url value="/static/js/main.js"/>"></script>
   </body>
 </html>
