@@ -1,5 +1,5 @@
 /**
- * @author Krzysztof Jastrzêbski
+ * @author Krzysztof Jastrzebski
 **/
 
 package com.jastrzebskikrzysztof.RzepeckiFotografia;
@@ -28,16 +28,11 @@ public class HomeController {
 	}
 	
 	@RequestMapping("/")
-	public String showHomePage() {
-		return "index";
-	}
-	
-	@RequestMapping("/getPhoto")
-	public String showPhotoDeliveryForm(Model model) {
+	public String showHomePage(Model model) {
 		
 		model.addAttribute("token", new Token());
 		
-		return "get-photo-form";
+		return "index";
 	}
 	
 	@RequestMapping("/processForm")
