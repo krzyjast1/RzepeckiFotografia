@@ -1,0 +1,299 @@
+<%@ taglib prefix="form" uri="http://www.springframework.org/tags/form" %>
+	<%@ page language="java" contentType="text/html; charset=UTF-8" pageEncoding="UTF-8" %>
+	<%@taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core" %>
+<!doctype html>
+<html lang="pl">
+  <head>
+      <!-- Required meta tags -->
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+      <meta name="description" content="Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.">
+      <meta name="author" content="Marta i Szymon Rzepeccy">
+      <!-- Bootstrap CSS -->
+      <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+      <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.2.0/css/all.css" integrity="sha384-hWVjflwFxL6sNzntih27bfxkr27PmbbK/iSvJ+a4+0owXq79v+lsFkW54bOGbiDQ" crossorigin="anonymous">
+      <link href="https://fonts.googleapis.com/css?family=Lato:400,700,900|Allura&amp;subset=latin-ext" rel="stylesheet">
+      <link rel="stylesheet" href="css/main.css">
+      <link rel="stylesheet" href="<c:url value="/static/css/gallery.css">">
+      <link rel="stylesheet" href="<c:url value="/static/css/animate.css">">
+      <link rel="stylesheet" href="<c:url value="/static/css/owl.carousel.min.css">">
+    	<link rel="stylesheet" href="<c:url value="/static/css/owl.theme.default.min.css">">
+      <title>MS Rzepeccy | Fotografia</title>
+<script src="js/modernizr-2.6.2.min.js"></script>
+</head>
+<body>
+  <div id="fb-root"></div>
+  <script>(function(d, s, id) {
+    var js, fjs = d.getElementsByTagName(s)[0];
+    if (d.getElementById(id)) return;
+    js = d.createElement(s); js.id = id;
+    js.src = 'https://connect.facebook.net/pl_PL/sdk.js#xfbml=1&version=v3.1';
+    fjs.parentNode.insertBefore(js, fjs);
+  }(document, 'script', 'facebook-jssdk'));</script>
+
+  <header class="welcome">
+    <i>
+      <div class="welcome-text  animate-box"  data-animate-effect="fadeInRight" style="opacity: 0;">Łapiemy szczęście...</div>
+    </i>
+    <nav class="navbar fixed-top navbar-expand-lg navbar-light bg-light">
+      <a class="navbar-brand animate-box"  data-animate-effect="fadeInRight"href="#" style="opacity: 0;"><img src="images/brand.jpg" class="img-fluid rounded"></a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarSupportedContent" style="padding-left: 10px;">
+        <ul class="navbar-nav mr-auto">
+          <li class="nav-item">
+            <a class="nav-link animate-box"  data-animate-effect="fadeInRight" style="opacity: 0;" href="#o-nas">O nas</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link animate-box"  data-animate-effect="fadeInRight" style="opacity: 0;" href="#galeria">Galeria</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link animate-box"  data-animate-effect="fadeInRight" style="opacity: 0;" href="#oferta">Oferta</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link animate-box"  data-animate-effect="fadeInRight" style="opacity: 0;" href="#odbierz">Odbierz zdjęcia</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link animate-box"  data-animate-effect="fadeInRight" style="opacity: 0;" href="#kontakt">Kontakt</a>
+          </li>
+        </ul>
+        <form class="form-inline my-2 my-lg-0">
+          <input class="form-control mr-sm-2" type="search" placeholder="Token" aria-label="Token" style="height: 40px; font-size: 0.85rem; width: 120px!important;">
+          <button class="btn btn-outline-dark my-2 my-sm-0" type="submit">Odbierz</button>
+        </form>
+      </div>
+    </nav>
+    <div  class="alert alert-light alert-dismissible fade show row align-items-end fixed-bottom" role="alert" >
+      <strong>Pliki cookies </strong> Tutaj umieszczamy tekst na temat plików cookies.
+      <button type="button" class="close" data-dismiss="alert" aria-label="Close">
+        <span aria-hidden="true">&times;</span>
+      </button>
+    </div>
+  </header>
+
+  <main>
+    <article class="about-us" id="o-nas">
+      <div class="container-fluid">
+        <div class="row" style="min-height: 8vh;"></div>
+        <div class="row justify-content-around" style="min-height: 22vh;">
+          <header class="col-lg-8 col-md-10 col-sm-12 align-self-center heading">
+            <h2 class="content-title">O nas</h2>
+            <p class="content-description"><i>Jesteśmy zgranym i doświadczonym małżeństwem fotografów.</i></p>
+          </header>
+        </div>
+        <div class="row" style="min-height: 5vh;"></div>
+        <div class="row align-items-center">
+          <section class="feature col-sm-12 col-md-4  col-lg-4 col-xl-4">
+            <i class="far fa-clock"></i>
+            <h3 class="feature-name"> Szybkość</h3>
+            <p class="feature-description">Wasze zdjęcia będą dostępne w ciągu 5 dni do pobrania na stronie.</p>
+          </section>
+          <section class="feature col-sm-12 col-md-4 col-lg-4 col-xl-4">
+            <i class="far fa-check-circle"></i>
+            <h3 class="feature-name"> Jakość</h3>
+            <p class="feature-description">Pracujemy na profesjonalnych aparatach, co gwarantuje Wam najwyższej jakości zdjęcia.</p>
+          </section>
+          <div class="clearfix visible-sm-block"></div>
+          <section class="feature col-sm-12 col-md-4 col-lg-4 col-xl-4 ">
+              <i class="far fa-smile"></i>
+              <h3 class="feature-name"> Otwartość</h3>
+              <p class="feature-description">Lubimy wyzwania :) Zrobimy wszystko, aby sprostać Waszym oczekiwaniom.</p>
+          </section>
+        </div>
+          <div class="row justify-content-around" style="min-height: 25vh;">
+            <p class="about-us-footer col-sm-10 col-md-10 col-lg-7 align-self-center" >To jeszcze nie wszystkie nasze atuty - skontaktuj sie z nami i przekonaj się sam.</p>
+          </div>
+      </div>
+      </article>
+    </main>
+
+  <article class="gallery" id="galeria">
+    <div class="container-fluid fh5co-gallery">
+    <header class="heading row justify-content-center">
+      <h2 class="content-title col">Galeria</h2>
+      <div class="w-100"></div>
+      <p class="content-description col-xs-12 col-sm-10 col-md-9 col-lg-8 col-xl-7">
+        Zapraszamy do naszego świata fotografii. Fotografujemy chwile i emocje, które towarzyszą Wam w najważniejszych momentach życia. Jest nam miło, że możemy w tym uczestniczyć.
+      </p>
+    </header>
+      <div class="row justify-content-center">
+        <a class="gallery-item col-xs-12 col-sm-6 col-md-6 col-lg-3  border border-white" href="single.html">
+          <img src="<c:url value="/static/images/wedding.jpg">" alt="Ślub">
+          <span class="overlay">
+            <h2>Ślub</h2>
+            <span>14 zdjęć</span>
+          </span>
+        </a>
+        <a class="gallery-item col-xs-12 col-sm-6 col-md-6 col-lg-3 border border-white" href="single.html">
+          <img src="<c:url value="/static/images/setting.jpg">" alt="Plener">
+          <span class="overlay">
+            <h2>Plener</h2>
+            <span>14 zdjęć</span>
+          </span>
+        </a>
+        <a class="gallery-item col-xs-12 col-sm-6 col-md-6 col-lg-3 border border-white" href="single.html">
+          <img src="<c:url value="/static/images/tummy.jpg">" alt="Brzuszki">
+          <span class="overlay">
+            <h2>Brzuszki</h2>
+            <span>7 zdjęć</span>
+          </span>
+        </a>
+        <a class="gallery-item col-xs-12 col-sm-6 col-md-6 col-lg-3 border border-white" href="single.html">
+          <img src="<c:url value="/static/images/children.jpg">" alt="Dzieci">
+          <span class="overlay">
+            <h2>Dzieci</h2>
+            <span>22 zdjęć</span>
+          </span>
+        </a>
+      </div>
+    </div>
+  </article>
+
+  <article class="offer" id="oferta">
+    <div class="container-fluid">
+      <header class="heading row justify-content-center">
+        <h2 class="content-title col">Nasza oferta</h2>
+      </header>
+
+      <section class="package row"id="pakiet-podstawa">
+        <div class="package-title col-10">
+          <h3>Reportaż ślubny - 1800 zł</h3>
+        </div>
+        <div class="w-100"></div>
+        <div class="package-description col-10">
+          <ul>
+            <li>Przygotowania w domu Panny Młodej</li>
+            <li>Błogosławieństwo</li>
+            <li>Ślub i życzenia</li>
+            <li>Przyjęcie Weselne (do końca oczepin ok.1:00 w nocy)</li>
+            <li>minimum 1000 (100 zdjęć wybranych po obróbce graficznej) na pendrive</li>
+            <li>mini plener w dniu ślubu (30 min)</li>
+          <ul>
+        </div>
+      </section>
+      <section class="package row"id="pakiet-plus">
+        <div class="package-title col-10">
+          <h3>Reportaż + Plener - 2300 zł</h3>
+        </div>
+        <div class="w-100"></div>
+        <div class="package-description col-10">
+          <ul>
+            <li>Przygotowania w domu Panny Młodej</li>
+            <li>Błogosławieństwo</li>
+            <li>Ślub i życzenia</li>
+            <li>Przyjęcie Weselne (do końca oczepin ok.1:00 w nocy)</li>
+            <li>minimum 1000 (100 zdjęć wybranych po obróbce graficznej) na pendrive</li>
+            <li>mini plener w dniu ślubu (30 min)</li>
+            <li>sesja Ślubna plenerowa w innym dniu</li>
+          </ul>
+        </div>
+      </section>
+      <section class="bonus row" style="padding: 1rem;">
+        <div class="border border-light rounded col-xs-12 col-md-6" >
+          <div class="bonus-title">
+            <h3>Sesja narzeczeńska - 300zł</h3>
+          </div>
+          <div class="bonus-description">
+            <ul>
+              <li>Sesja narzeczeńska - 1 godzina zdjęć</li>
+            </ul>
+          </div><!--.bonus-description-->
+        </div><!--border-->
+        <div class="border border-light rounded col-xs-12 col-md-6" >
+          <div class="bonus-title">
+            <h3>Fotobudka - 750 zł</h3>
+          </div>
+          <div class="bonus-description">
+            <ul>
+              <li>2 godz.</li>
+              <li>bez limitu zdjęć</li>
+              <li>opieka animatora</li>
+              <li>rekwizyty</li>
+              <li>personalizacja zdjęć</li>
+              <li>tło</li>
+            </ul>
+          </div><!--.bonus-description-->
+        </div><!--border-->
+        <div class="border border-light rounded col-xs-12 col-md-6" >
+          <div class="bonus-title">
+            <h3>Fotoalbum - 550 / 620 zł</h3>
+          </div>
+          <div class="bonus-description">
+            <ul>
+              <li>fotoalbum 30x30</li>
+            </ul>
+          </div><!--.bonus-description-->
+        </div><!--border-->
+        <div class="border border-light rounded col-xs-12 col-md-6" >
+          <div class="bonus-title">
+            <h3>Plener Ślubny - 700 zł</h3>
+          </div>
+          <div class="bonus-description"><!--brak opisu--></div>
+        </div><!--border-->
+        <div class="border border-light rounded col-xs-12 col-md-6" >
+          <div class="bonus-title">
+            <h3>Drugi fotograf - 500 zł</h3>
+          </div>
+          <div class="bonus-description"><!--brak opisu--></div>
+        </div><!--border-->
+      </section>
+    </div>
+  </article>
+
+  <article class="pick-up" id="odbierz">
+    <div class="container-fluid">
+      <header class="heading row justify-content-center">
+        <h2 class="content-title col-10">Odbierz zdjęcia</h2>
+        <div class="w-100"></div>
+        <p class="content-description col-xs-12 col-sm-10 col-md-9 col-lg-8 col-xl-7">
+        Specjalnie dla Was stworzyliśmy system internetowego odbioru zdjęć, dzięki temu zobaczycie je jeszcze szybciej. Obrazy pozostaną dostępne do pobrania przez okres dwóch tygodni.
+        </p>
+      </header>
+
+      <div class="row justify-content-center" style="width: 99vw;">
+        <form class="form-inline my-2 my-lg-0 ">
+          <input class="form-control mr-sm-2" type="search" placeholder="Token" aria-label="Token" style="height: 40px; font-size: 0.85rem; width: 240px!important;">
+          <button class="btn btn-outline-dark my-2 my-sm-0" type="submit" style="margin:0;">Odbierz</button>
+        </form>
+      </div>
+    </div>
+  </article>
+
+<footer class="contact" id="kontakt">
+  <div class="container-fluid">
+    <div class="row" style="min-height: 2vh;"></div>
+    <header class="row" style="min-height: 10vh;">
+      <h2 class="footer-tittle col-12 align-self-center">Przekonałeś się?</h2>
+    </header>
+    <div class="row align-items-start justify-content-around">
+        <div class="footer-description col-sm-12 col-md-10">
+          <p class="content-description">Skontaktuj się z nami przez email lub telefonicznie.</p>
+          <address class="contact-info">Marta i Szymon Rzepeccy<br>519 121 905<br>msrzepeccy@wp.pl</address>
+        </div>
+        <div class="w-100"></div>
+        <iframe src="https://www.facebook.com/plugins/page.php?href=https%3A%2F%2Fwww.facebook.com%2Fmsrzepeccy&tabs=timeline&width=500&height=130&small_header=false&adapt_container_width=true&hide_cover=false&show_facepile=true&appId" width="500" height="130" style="border:none;overflow:hidden" scrolling="no" frameborder="0" allowTransparency="true" allow="encrypted-media"></iframe>
+      </div><!--div.row-->
+    <div class="row" style="min-height: 10vh;"></div>
+  </div><!--div.container-fluid-->
+</footer>
+
+    <!-- Optional JavaScript -->
+
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+    <!-- jQuery -->
+    <script src="<c:url value="/static/js/jquery.min.js">"></script>
+    <!-- Carousel -->
+  	<script src="<c:url value="/static/js/owl.carousel.min.js">"></script>
+  	<!-- Stellar -->
+  	<script src="<c:url value="/static/js/jquery.stellar.min.js">"></script>
+  	<!-- Waypoints -->
+  	<script src="<c:url value="/static/js/jquery.waypoints.min.js">"></script>
+  	<!-- MAIN JS -->
+  	<script src="<c:url value="/static/js/main.js">"></script>
+
+  </body>
+</html>
